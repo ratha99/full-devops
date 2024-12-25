@@ -1,0 +1,12 @@
+services:
+  frontend:
+    container_name: vue-frontend-tfd
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - production-networks
+networks:
+  production-networks:
+    name: production-networks
+    external: true
