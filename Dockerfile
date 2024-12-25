@@ -2,7 +2,7 @@ FROM node:16.20.2-slim
 
 ARG ENV_FILE
 
-WORKDIR /app
+WORKDIR /frontend
 COPY ./frontend/package.json ./frontend/yarn.lock $ENV_FILE ./
 RUN yarn install
 
